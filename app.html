@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scoreboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <h1>Scoreboard</h1>
+    <button class="settings-btn">⚙️</button>
+  </header>
+
+  <main class="scoreboard">
+    
+    <!-- Team A -->
+    <div class="team">
+      <div class="team-header">
+        <h2 id="teamAName">Bananaland</h2>
+        <button class="change-name" onclick="changeName('A')">Change name…</button>
+      </div>
+      <div class="score" id="scoreA">11</div>
+      <div class="controls">
+        <button onclick="updateScore('A', 1)">+</button>
+        <button onclick="updateScore('A', -1)">-</button>
+      </div>
+    </div>
+
+    <!-- Team B -->
+    <div class="team">
+      <div class="team-header">
+        <h2 id="teamBName">Oranges Unite!</h2>
+        <button class="change-name" onclick="changeName('B')">Change name…</button>
+      </div>
+      <div class="score" id="scoreB">23</div>
+      <div class="controls">
+        <button onclick="updateScore('B', 1)">+</button>
+        <button onclick="updateScore('B', -1)">-</button>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
